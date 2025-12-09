@@ -1,0 +1,15 @@
+[package]
+name = "advent_of_code_2025"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#md5 = "0.8.0"
+#smallvec = "2.0.0-alpha.11"
+#json = "0.12.4"
+#itertools = "0.14.0"
+#rand = "0.10.0-rc.5"
+
+[dependencies.partser]
+#git = "https://github.com/LIMachi/partser.git"
+path = "partser"
