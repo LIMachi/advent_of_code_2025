@@ -24,7 +24,7 @@ struct Problem(Vec<i64>, Operation);
 fn parse_a(input: &str) -> Vec<Problem> {
     let mut lines = input.lines().rev();
     let operations = lines.next().unwrap();
-    let ops = operations.parse_with(true, "*+".any().map_ok(|c| if c == '*' { Operation::Multiply } else { Operation::Add }).rep_separated(' '.rep(1.., true), .., true)).unwrap();
+    let ops = operations.parse_with(false, "*+".any().map_ok(|c| if c == '*' { Operation::Multiply } else { Operation::Add }).rep_separated(' '.rep(1.., true), .., true)).unwrap();
     let mut problems = Vec::with_capacity(ops.len());
     for op in ops {
         problems.push(Problem(Default::default(), op));

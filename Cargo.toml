@@ -9,6 +9,7 @@ edition = "2024"
 #json = "0.12.4"
 #itertools = "0.14.0"
 #rand = "0.10.0-rc.5"
+nalgebra = "0.34.1"
 
 [dependencies.partser]
 #git = "https://github.com/LIMachi/partser.git"
